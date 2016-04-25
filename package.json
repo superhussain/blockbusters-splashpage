@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "lalalala",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.9.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-stylus": "^2.3.1",
+    "gulp-uglify": "^1.4.1",
+    "gulp-webserver": "^0.9.1",
+    "stylus": "^0.54.2"
+  },
+  "author": "Hussain Abbas",
+  "license": "MIT"
+}

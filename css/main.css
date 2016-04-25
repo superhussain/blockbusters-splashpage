@@ -1,0 +1,293 @@
+/* normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 2 */
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+@font-face {
+  font-family: 'Homestead Display';
+  src: url("fonts/homestead-display-webfont.eot");
+  src: url("fonts/homestead-display-webfont.eot?#iefix") format('embedded-opentype'), url("fonts/homestead-display-webfont.woff2") format('woff2'), url("fonts/homestead-display-webfont.woff") format('woff'), url("fonts/homestead-display-webfont.ttf") format('truetype'), url("fonts/homestead-display-webfont.svg#homestead_displaydisplay") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Homestead Inline';
+  src: url("fonts/homestead-inline-webfont.eot");
+  src: url("fonts/homestead-inline-webfont.eot?#iefix") format('embedded-opentype'), url("fonts/homestead-inline-webfont.woff2") format('woff2'), url("fonts/homestead-inline-webfont.woff") format('woff'), url("fonts/homestead-inline-webfont.ttf") format('truetype'), url("fonts/homestead-inline-webfont.svg#homestead_inlineinline") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Homestead';
+  src: url("fonts/homestead-regular-webfont.eot");
+  src: url("fonts/homestead-regular-webfont.eot?#iefix") format('embedded-opentype'), url("fonts/homestead-regular-webfont.woff2") format('woff2'), url("fonts/homestead-regular-webfont.woff") format('woff'), url("fonts/homestead-regular-webfont.ttf") format('truetype'), url("fonts/homestead-regular-webfont.svg#homestead_regularregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin: 0;
+}
+h1 {
+  font-family: 'Homestead Inline';
+}
+body {
+  overflow: hidden;
+  background-image: url("../img/bg-tile.jpg");
+  font-family: 'Homestead';
+  font-size: 16px;
+}
+@media (max-width: 450px) {
+  body {
+    font-size: 80%;
+  }
+}
+body .container {
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+body .container .logo {
+  width: 95%;
+  max-width: 460px;
+  margin: 0 auto;
+}
+body .container .logo img {
+  width: 100%;
+}
+body .container .strip {
+  background-color: #253241;
+  padding: 2em 0;
+}
+body .container .strip h1 {
+  font-size: 3em;
+  margin-bottom: 0.25em;
+}
+body .container .strip h2 {
+  font-size: 1.6em;
+  letter-spacing: 5px;
+}
+body .container .social .social-wrap {
+  width: 95%;
+  max-width: 300px;
+  margin: 1em auto 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+body .container .social .social-wrap a {
+  color: rgba(255,255,255,0.9);
+  font-size: 3.5em;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+body .container .social .social-wrap .facebook:hover {
+  color: #3b5998;
+}
+body .container .social .social-wrap .twitter:hover {
+  color: #0084b4;
+}
+body .container .social .social-wrap .instagram:hover {
+  color: #125688;
+}

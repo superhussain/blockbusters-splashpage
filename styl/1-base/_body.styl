@@ -1,0 +1,52 @@
+*
+  box-sizing: border-box;
+h1,h2,h3,h4,h5,h6
+  font-weight: 400
+  margin: 0
+h1
+  font-family: 'Homestead Inline'
+body
+  overflow: hidden;
+  background-image: url(../img/bg-tile.jpg)
+  font-family: 'Homestead'
+  font-size: 16px
+  @media (max-width: 450px)
+    font-size: 80%
+  .container
+    height: 100vh
+    text-align: center
+    color: $white
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    .logo
+      width: 95%
+      max-width: 460px
+      margin: 0 auto
+      img
+        width: 100%
+    .strip
+      background-color: $bg-strip
+      padding: 2em 0
+      h1
+        font-size: 3em
+        margin-bottom: 0.25em
+      h2
+        font-size: 1.6em
+        letter-spacing: 5px
+    .social .social-wrap
+      width: 95%
+      max-width: 300px
+      margin: 1em auto 0
+      display: flex 
+      justify-content: space-around
+      a
+        color: rgba($white, 0.9)
+        font-size: 3.5em
+        transition: 300ms ease-in-out
+      .facebook:hover
+        color: #3b5998
+      .twitter:hover
+        color: #0084b4
+      .instagram:hover
+        color: #125688
