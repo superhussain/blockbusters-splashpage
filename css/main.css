@@ -88,8 +88,7 @@ figure {
   margin: 1em 40px;
 }
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
 }
 pre {
@@ -139,8 +138,7 @@ input {
 }
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
+  box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 input[type="number"]::-webkit-inner-spin-button,
@@ -149,8 +147,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box; /* 2 */
+  box-sizing: content-box; /* 2 */
 }
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
@@ -201,8 +198,7 @@ th {
   font-style: normal;
 }
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -290,4 +286,47 @@ body .container .social .social-wrap .twitter:hover {
 }
 body .container .social .social-wrap .instagram:hover {
   color: #125688;
+}
+#register .button-container {
+  position: relative;
+  height: 15vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 3px solid #fff;
+}
+#register .button-container a {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1;
+  margin: 0;
+  color: #fff;
+  width: 50%;
+  padding: -webkit-calc(15vh / 2 - 0.5em);
+  padding: calc(15vh / 2 - 0.5em);
+  background-color: #2b3c50;
+  text-decoration: none;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+#register .button-container a:hover {
+  background-color: #253241;
+}
+#register .button-container a:first-child {
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+#register .button-container a.active {
+  background-color: #253241;
+}
+#register .frame-container {
+  height: 85vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#register .frame-container #ladies {
+  display: none;
 }

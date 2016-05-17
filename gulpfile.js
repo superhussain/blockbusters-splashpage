@@ -35,6 +35,12 @@ gulp.task('styles', function() {
   .pipe(livereload());
 });
 
+// html task
+gulp.task('html', function() {
+  return gulp.src('./*.html')
+  .pipe(livereload());
+});
+
 // image task
 gulp.task('image', function() {
   gulp.src('img/*')
@@ -79,6 +85,7 @@ gulp.task('watch', function() {
 
   gulp.watch('js/*.js', ['scripts']);
   gulp.watch('styl/**/*', ['styles']);
+  gulp.watch('*.html', ['html']);
 });
 
 // default task

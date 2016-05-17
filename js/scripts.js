@@ -3,6 +3,7 @@
     scroll();
     navScroll();
     hamburger();
+    frameButtons();
     $(window).resize(function(e) {
       resizeFix();
     });
@@ -41,5 +42,18 @@ var navScroll = function() {
     } else {
       $('nav').removeClass('sticky-nav');
     }
+  });
+};
+
+var frameButtons = function() {
+  $('#register .button-container').on('click', 'a', function(e) {
+    $('#register .button-container a').removeClass('active');
+    $(this).addClass('active');
+    
+    var target = '#' + $(this).data('target');
+    $('#register .frame-container iframe').slideUp(400);
+    $('#register .frame-container ' + target).delay(600).slideDown();
+
+    e.preventDefault();
   });
 };
