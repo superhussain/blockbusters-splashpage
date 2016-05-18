@@ -176,6 +176,7 @@ td,
 th {
   padding: 0;
 }
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 @font-face {
   font-family: 'Homestead Display';
   src: url("fonts/homestead-display-webfont.eot");
@@ -213,18 +214,18 @@ h1 {
   font-family: 'Homestead Inline';
 }
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   background-image: url("../img/bg-tile.jpg");
   font-family: 'Homestead';
   font-size: 16px;
 }
-@media (max-width: 450px) {
+@media (max-width: 700px) {
   body {
-    font-size: 80%;
+    font-size: 70%;
   }
 }
 body .container {
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   color: #fff;
   display: -webkit-box;
@@ -242,23 +243,57 @@ body .container {
 }
 body .container .logo {
   width: 95%;
-  max-width: 460px;
-  margin: 0 auto;
+  max-width: 400px;
+  margin: 3em auto;
 }
 body .container .logo img {
   width: 100%;
 }
 body .container .strip {
   background-color: #253241;
-  padding: 2em 0;
+  padding: 2em 1em;
 }
 body .container .strip h1 {
   font-size: 3em;
-  margin-bottom: 0.25em;
 }
 body .container .strip h2 {
-  font-size: 1.6em;
+  font-size: 1.8em;
   letter-spacing: 5px;
+  margin-bottom: 1.3em;
+}
+body .container .strip p {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  font-weight: 100;
+  margin: 0.25em 0;
+}
+body .container .strip .register-button {
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  margin: 1.5em auto 1em;
+  font-size: 1.8em;
+  letter-spacing: 3px;
+  color: #fff;
+  background-color: #377eac;
+  padding: 0.75em;
+  text-decoration: none;
+  border-radius: 3px;
+  border-bottom: 8px solid #2c658a;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+body .container .strip .register-button:hover {
+  border-bottom: 4px solid #2c658a;
+  margin-top: -webkit-calc(1.5em + 2px);
+  margin-top: calc(1.5em + 2px);
+  -webkit-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+          transform: translateY(2px);
+}
+body .container .social {
+  margin: 3em auto;
+  font-size: 0.9em;
 }
 body .container .social .social-wrap {
   width: 95%;
