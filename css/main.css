@@ -365,3 +365,48 @@ body .container .social .social-wrap .instagram:hover {
 #register .frame-container #ladies {
   display: none;
 }
+#raffle .strip h2 {
+  font-size: 1.5em;
+  margin: 0.75em 0;
+  letter-spacing: 10px;
+}
+#raffle .strip #raffle-form {
+  width: 80%;
+  margin: 1em auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#raffle .strip #raffle-form #name,
+#raffle .strip #raffle-form #email {
+  width: 48%;
+}
+#raffle .strip #raffle-form #answer {
+  width: 100%;
+  padding: 1em;
+  font-size: 1.2em;
+}
+#raffle .strip #raffle-form #submit {
+  width: 50%;
+  font-size: 1.1em;
+  letter-spacing: 5px;
+  padding: 1em;
+  background-color: #377eac;
+  margin: 0.75em auto;
+}
+#raffle .strip #raffle-form input {
+  color: #fff;
+  background-color: #2b3c50;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+}
