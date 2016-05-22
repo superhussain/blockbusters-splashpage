@@ -19,7 +19,7 @@
     </div>
     <div class="strip">
       <h2>Raffle Question:</h2>
-      <h1>What B is the best trivia competition ever?</h1>
+      <h1>What B is the arabic term for "Innocence"?</h1>
 
       <form id="raffle-form">
         <input id="name" type="text" placeholder="Name" name="name">
@@ -52,7 +52,7 @@
         dataType: 'json',
         success: function (response) {
           if (response.html) {
-            $('input').val('');
+            $('#name, #email, #answer').val('');
           }
           $('#message').empty().html(response.html);
         }

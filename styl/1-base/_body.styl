@@ -1,5 +1,6 @@
 *
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased
 h1,h2,h3,h4,h5,h6
   font-weight: 400
   margin: 0
@@ -32,31 +33,44 @@ body
         font-size: 3em
       h2
         font-size: 1.8em
-        letter-spacing: 5px
+        letter-spacing: 10px
         margin-bottom: 1.3em
       p
         font-size: 1.3em
         letter-spacing: 1px
         font-weight: 100
         margin: 0.25em 0
-      .register-button
-        display: block
-        width: 90%
-        max-width: 400px
-        margin: 1.5em auto 1em
-        font-size: 1.8em
-        letter-spacing: 3px
-        color: $white
-        background-color: $blue
-        padding: 0.75em
-        text-decoration: none
-        border-radius: 3px
-        border-bottom: 8px solid darken($blue, 20%)
-        transition: all 100ms ease-in-out
-        &:hover
-          border-bottom: 4px solid darken($blue, 20%)
-          margin-top: calc(1.5em + 2px)
-          transform: translateY(2px)
+      .button-container
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        @media (max-width: 600px)
+          flex-wrap: wrap
+        a
+          display: block
+          width: 100%
+          max-width: 400px
+          margin: 0 1em 1.5em
+          font-size: 1.3em
+          letter-spacing: 3px
+          color: $white
+          padding: 0.75em
+          text-decoration: none
+          border-radius: 3px
+          transition: all 200ms ease-in-out 
+        .register-button
+          background-color: $blue
+          border-bottom: 8px solid darken($blue, 20%)
+          &:hover
+            background-color: darken($blue, 12%)
+            border-bottom: 8px solid darken($blue, 25%)
+        .raffle-button
+          background-color: $green
+          border-bottom: 8px solid darken($green, 20%)
+          &:hover
+            background-color: darken($green, 12%)
+            border-bottom: 8px solid darken($green, 25%)
     .social 
       margin: 3em auto
       font-size: 0.9em

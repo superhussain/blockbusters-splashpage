@@ -200,6 +200,7 @@ th {
 }
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 h1,
 h2,
@@ -258,7 +259,7 @@ body .container .strip h1 {
 }
 body .container .strip h2 {
   font-size: 1.8em;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   margin-bottom: 1.3em;
 }
 body .container .strip p {
@@ -267,29 +268,57 @@ body .container .strip p {
   font-weight: 100;
   margin: 0.25em 0;
 }
-body .container .strip .register-button {
+body .container .strip .button-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  body .container .strip .button-container {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+body .container .strip .button-container a {
   display: block;
-  width: 90%;
+  width: 100%;
   max-width: 400px;
-  margin: 1.5em auto 1em;
-  font-size: 1.8em;
+  margin: 0 1em 1.5em;
+  font-size: 1.3em;
   letter-spacing: 3px;
   color: #fff;
-  background-color: #377eac;
   padding: 0.75em;
   text-decoration: none;
   border-radius: 3px;
-  border-bottom: 8px solid #2c658a;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
-body .container .strip .register-button:hover {
-  border-bottom: 4px solid #2c658a;
-  margin-top: -webkit-calc(1.5em + 2px);
-  margin-top: calc(1.5em + 2px);
-  -webkit-transform: translateY(2px);
-      -ms-transform: translateY(2px);
-          transform: translateY(2px);
+body .container .strip .button-container .register-button {
+  background-color: #377eac;
+  border-bottom: 8px solid #2c658a;
+}
+body .container .strip .button-container .register-button:hover {
+  background-color: #306f97;
+  border-bottom: 8px solid #295e81;
+}
+body .container .strip .button-container .raffle-button {
+  background-color: #27ae60;
+  border-bottom: 8px solid #1f8b4d;
+}
+body .container .strip .button-container .raffle-button:hover {
+  background-color: #229954;
+  border-bottom: 8px solid #1d8348;
 }
 body .container .social {
   margin: 3em auto;
