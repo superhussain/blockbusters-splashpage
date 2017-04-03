@@ -217,10 +217,22 @@ h1 {
 }
 html {
   position: relative;
+  background-color: #2b3c50;
 }
+html:before,
 html:after {
   content: '';
   position: absolute;
+  pointer-events: none;
+}
+html:before {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1em solid rgba(0,0,0,0.25);
+}
+html:after {
   top: 1em;
   bottom: 1em;
   left: 1em;

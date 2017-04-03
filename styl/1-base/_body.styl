@@ -8,9 +8,18 @@ h1
   font-family: 'Homestead Inline'
 html
   position: relative
-  &:after
+  background-color: $bg
+  &:before, &:after
     content: ''
     position: absolute
+    pointer-events: none
+  &:before
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    border: 1em solid rgba($black, 0.25)
+  &:after
     top: 1em
     bottom: 1em
     left: 1em
