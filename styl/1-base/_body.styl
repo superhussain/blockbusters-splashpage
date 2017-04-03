@@ -6,6 +6,17 @@ h1,h2,h3,h4,h5,h6
   margin: 0
 h1
   font-family: 'Homestead Inline'
+html
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    top: 1em
+    bottom: 1em
+    left: 1em
+    right: 1em
+    border: 0.5em solid $red
+
 body
   overflow-x: hidden;
   background-image: url(../img/bg-tile.jpg)
@@ -24,18 +35,20 @@ body
       width: 95%
       max-width: 400px
       margin: 3em auto
+      padding: 0 1.5em
       img
         width: 100%
     .strip
       background-color: $bg-strip
-      padding: 2em 1em
+      padding: 2em 1.75em
       h1
-        font-size: 3em
+        font-size: 6em
         margin-bottom: 1.5rem
+        @media (max-width: 600px)
+          font-size: 5em
       h2
-        font-size: 1.8em
-        letter-spacing: 10px
-        margin-bottom: 1.3em
+        font-size: 2em
+        margin-bottom: 1rem
       p
         font-size: 1.3em
         letter-spacing: 1px

@@ -215,6 +215,18 @@ h6 {
 h1 {
   font-family: 'Homestead Inline';
 }
+html {
+  position: relative;
+}
+html:after {
+  content: '';
+  position: absolute;
+  top: 1em;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  border: 0.5em solid #d95649;
+}
 body {
   overflow-x: hidden;
   background-image: url("../img/bg-tile.jpg");
@@ -247,22 +259,27 @@ body .container .logo {
   width: 95%;
   max-width: 400px;
   margin: 3em auto;
+  padding: 0 1.5em;
 }
 body .container .logo img {
   width: 100%;
 }
 body .container .strip {
   background-color: #253241;
-  padding: 2em 1em;
+  padding: 2em 1.75em;
 }
 body .container .strip h1 {
-  font-size: 3em;
+  font-size: 6em;
   margin-bottom: 1.5rem;
 }
+@media (max-width: 600px) {
+  body .container .strip h1 {
+    font-size: 5em;
+  }
+}
 body .container .strip h2 {
-  font-size: 1.8em;
-  letter-spacing: 10px;
-  margin-bottom: 1.3em;
+  font-size: 2em;
+  margin-bottom: 1rem;
 }
 body .container .strip p {
   font-size: 1.3em;
