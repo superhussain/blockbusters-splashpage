@@ -177,6 +177,7 @@ th {
   padding: 0;
 }
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800");
 @font-face {
   font-family: 'Homestead Display';
   src: url("fonts/homestead-display-webfont.eot");
@@ -256,6 +257,7 @@ body .container .strip {
 }
 body .container .strip h1 {
   font-size: 3em;
+  margin-bottom: 1.5rem;
 }
 body .container .strip h2 {
   font-size: 1.8em;
@@ -277,10 +279,6 @@ body .container .strip .button-container {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
 }
 @media (max-width: 600px) {
@@ -294,13 +292,14 @@ body .container .strip .button-container a {
   display: block;
   width: 100%;
   max-width: 400px;
-  margin: 0 1em 1.5em;
+  margin: 0 0.5em 1.5em;
   font-size: 1.3em;
   letter-spacing: 3px;
   color: #fff;
   padding: 0.75em;
   text-decoration: none;
   border-radius: 3px;
+  white-space: nowrap;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
@@ -319,6 +318,14 @@ body .container .strip .button-container .raffle-button {
 body .container .strip .button-container .raffle-button:hover {
   background-color: #229954;
   border-bottom: 8px solid #1d8348;
+}
+body .container .strip .button-container .question-raffle-button {
+  background-color: #377eac;
+  border-bottom: 8px solid #2c658a;
+}
+body .container .strip .button-container .question-raffle-button:hover {
+  background-color: #306f97;
+  border-bottom: 8px solid #295e81;
 }
 body .container .social {
   margin: 3em auto;
@@ -438,4 +445,183 @@ body .container .social .social-wrap .instagram:hover {
   border-radius: 4px;
   padding: 0.5em 1em;
   margin: 0.5em 0;
+}
+#question-page .strip h1 {
+  width: 90%;
+  margin: 0 auto;
+}
+#question-page .strip .details {
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 0.75em 0;
+  letter-spacing: 4px;
+  color: #377eac;
+  text-decoration: none;
+  padding-bottom: 5px;
+  box-shadow: 0px 17px 0px -13px rgba(255,255,255,0.5);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+#question-page .strip .details:hover {
+  padding-bottom: 10px;
+  box-shadow: 0px 4px 0 0 rgba(255,255,255,0.8);
+  padding: 0 3em;
+  color: #94c0dd;
+}
+#question-page .strip #question-form {
+  width: 80%;
+  margin: 1em auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 700px) {
+  #question-page .strip #question-form {
+    font-size: 140%;
+  }
+}
+#question-page .strip #question-form #name,
+#question-page .strip #question-form .select-wrapper {
+  width: 48%;
+}
+@media (max-width: 700px) {
+  #question-page .strip #question-form #name,
+  #question-page .strip #question-form .select-wrapper {
+    width: 100%;
+  }
+}
+#question-page .strip #question-form .select-wrapper {
+  position: relative;
+}
+#question-page .strip #question-form .select-wrapper:before {
+  font-family: 'FontAwesome';
+  content: '\F0DD';
+  position: absolute;
+  right: 1.25em;
+  top: 1em;
+}
+#question-page .strip #question-form .select-wrapper #team {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+}
+#question-page .strip #question-form #answer,
+#question-page .strip #question-form #question {
+  width: 100%;
+  padding: 0.5em 0.75em;
+  font-size: 1.2em;
+}
+#question-page .strip #question-form #submit {
+  width: 50%;
+  font-size: 1.1em;
+  letter-spacing: 5px;
+  padding: 1em;
+  background-color: #377eac;
+  margin: 0.75em auto;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+#question-page .strip #question-form #submit:hover {
+  background-color: #33749e;
+}
+#question-page .strip #question-form input,
+#question-page .strip #question-form select {
+  color: #fff;
+  background-color: #2b3c50;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+}
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.7);
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  background-color: #2b3c50;
+  color: #fff;
+  top: 3em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: -webkit-calc(100vh - 6em);
+  height: calc(100vh - 6em);
+  width: 95%;
+  max-width: 800px;
+  box-shadow: 0px 0px 200px 10px #000;
+  border-radius: 1rem;
+}
+.modal .modal-header {
+  background-color: #253241;
+  padding: 1rem 3rem;
+  border-radius: 1rem 1rem 0 0;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.modal .modal-body {
+  padding: 1.5rem 3rem;
+  height: -webkit-calc(100% - 7.5em);
+  height: calc(100% - 7.5em);
+  overflow: auto;
+  font-size: 1.1rem;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+.modal .modal-body p a {
+  color: #3e8ec1;
+  font-weight: 600;
+}
+.modal .modal-footer {
+  background-color: #253241;
+  padding: 1rem 3rem;
+  border-radius: 0 0 1rem 1rem;
+  border-top: 1px solid rgba(0,0,0,0.3);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.modal button {
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  color: #fff;
+  margin-left: 1em;
+  border-style: none;
+}
+.modal button#edit-button {
+  background-color: #27ae60;
+}
+.modal button#add-button {
+  background-color: #27ae60;
+}
+.modal button#close-button {
+  background-color: #d95649;
+}
+.modal button#delete-button {
+  background-color: #d95649;
+}
+.modal#modal-delete .body button#close-button {
+  background-color: transparent;
+  color: #999;
 }

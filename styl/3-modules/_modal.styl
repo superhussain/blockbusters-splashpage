@@ -1,0 +1,63 @@
+.modal-overlay
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background-color: rgba($black, 0.7)
+.modal
+  display: none
+  position: fixed 
+  z-index: 2
+  background-color: $bg
+  color: $white
+  top: 3em
+  left: 50%
+  transform: translateX(-50%)
+  height: calc(100vh - 6em)
+  width: 95%
+  max-width: 800px
+  box-shadow: 0px 0px 200px 10px $black
+  border-radius: 1rem
+  .modal-header
+    background-color: $bg-strip
+    padding: 1rem 3rem
+    border-radius: 1rem 1rem 0 0
+    border-bottom: 1px solid rgba($black, 0.3)
+  .modal-body
+    padding: 1.5rem 3rem
+    height: calc(100% - 7.5em)
+    overflow: auto
+    font-size: 1.1rem
+    font-family: "Open Sans"
+    font-weight: 300
+    p a
+      color: lighten($blue, 10%)
+      font-weight: 600
+  .modal-footer
+    background-color: $bg-strip
+    padding: 1rem 3rem
+    border-radius: 0 0 1rem 1rem
+    border-top: 1px solid rgba($black, 0.3)
+    display: flex
+    justify-content: flex-end
+  button
+    padding: 0.5em 1em
+    border-radius: 4px
+    color: $white
+    margin-left: 1em
+    border-style: none
+    &#edit-button
+      background-color: $green
+    &#add-button
+      background-color: $green
+    &#close-button
+      background-color: $red
+    &#delete-button
+      background-color: $red
+  &#modal-delete .body button
+    &#close-button
+      background-color: transparent
+      color: #999
+

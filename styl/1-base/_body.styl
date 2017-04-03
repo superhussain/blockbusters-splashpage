@@ -31,6 +31,7 @@ body
       padding: 2em 1em
       h1
         font-size: 3em
+        margin-bottom: 1.5rem
       h2
         font-size: 1.8em
         letter-spacing: 10px
@@ -43,7 +44,7 @@ body
       .button-container
         display: flex
         justify-content: center
-        align-items: center
+        // align-items: center
         width: 100%
         @media (max-width: 600px)
           flex-wrap: wrap
@@ -51,13 +52,14 @@ body
           display: block
           width: 100%
           max-width: 400px
-          margin: 0 1em 1.5em
+          margin: 0 0.5em 1.5em
           font-size: 1.3em
           letter-spacing: 3px
           color: $white
           padding: 0.75em
           text-decoration: none
           border-radius: 3px
+          white-space: nowrap
           transition: all 200ms ease-in-out 
         .register-button
           background-color: $blue
@@ -71,6 +73,12 @@ body
           &:hover
             background-color: darken($green, 12%)
             border-bottom: 8px solid darken($green, 25%)
+        .question-raffle-button
+          background-color: $blue
+          border-bottom: 8px solid darken($blue, 20%)
+          &:hover
+            background-color: darken($blue, 12%)
+            border-bottom: 8px solid darken($blue, 25%)
     .social 
       margin: 3em auto
       font-size: 0.9em
